@@ -1,0 +1,517 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+}
+
+.navbar {
+    transition: all 0.4s ease-in-out;
+    background-color: #f8f9fa !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #0d6efd !important;
+}
+
+.navbar-nav .nav-link {
+    color: #333 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd !important;
+}
+
+.hero {
+    /* background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    /* text-shadow: 2px 2px 4px #000; */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+/* Skills Icons */
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 0 2rem;
+}
+
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-icon img {
+    width: 100px;
+    height: 100px;
+    padding: 1.5rem;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover img {
+    transform: translateY(-5px);
+}
+
+.skill-icon span {
+    font-size: 1rem;
+    font-family: serif;
+    font-weight: 600;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+/* qualification */
+/* .main-qualification{
+    display: flex;
+    flex-direction: row; */
+
+.container-quali{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #007bff;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #007bff;
+}
+
+.project-card {
+    background: url(supermart.jpg) center/cover no-repeat;
+    height: 200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h5 {
+    font-weight: 600;
+}
+
+.project-card p {
+    color: #555;
+}
+
+footer {
+    background: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* From Uiverse.io by SouravBandyopadhyay */ 
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* From Uiverse.io by alexruix */ 
+.card {
+    width: 290px;   
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-details {
+    /* background-image: url(/supermart.jpg); */
+    object-fit: cover;
+    background-position:center;
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   .card-details img{
+    width: 95%;
+    position: absolute;
+    z-index: 0;
+    left: 7px;
+    opacity: 0.5;
+   }
+   .card-details-2 img{
+    height: 34vh;
+    width: 95%;
+    position: absolute;
+    z-index: 0;
+    left: 7px;
+    top: 3px;
+    opacity: 0.5;
+
+   }
+   .card-details-3 img{
+    height: 34vh;
+    width: 95%;
+    position: absolute;
+    z-index: 0;
+    left: 7px;
+    top: 3px;
+    opacity: 0.5;
+   }
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 3rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+    position: absolute;
+    bottom: 35px;
+    font-weight: bold;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+    border-radius: 5px;
+
+   }
+    button {
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+  }
+  
+  button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+  };
+  
+  button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+  };
+  /* From Uiverse.io by mrhyddenn */ 
+/* button {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    border-radius: 3rem;
+
+  }
+  
+  span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(86, 108, 232);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+    border-radius: 3rem;
+
+  }
+  
+  button:hover {
+    color: #fff;
+    border-radius: 3rem;
+
+
+    
+  }
+  
+  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+    border-radius: 3rem;
+
+  } */
+
+  /* From Uiverse.io by cssbuttons-io  */
+/* .button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+    text-decoration: none;
+  }
+  
+  .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #39bda7;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button:hover {
+    color: #ffffff;
+    border: 1px solid #008bf8;
+  }
+  
+  .button:hover:before {
+    top: -35%;
+    background-color: #008bf8;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button:hover:after {
+    top: -45%;
+    background-color: #008bf8;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  } */
+  /* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .hero-image img {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .skill-icons {
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .container-quali {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .card-details img,
+    .card-details-2 img,
+    .card-details-3 img {
+        width: 100%;
+        left: 0;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .skill-icon img {
+        width: 70px;
+        height: 70px;
+        padding: 1rem;
+    }
+
+    .card {
+        height: auto;
+        padding-bottom: 4rem;
+    }
+
+    .text-title {
+        font-size: 1.2em;
+    }
+
+    .card-button {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 0.8em 1.5em;
+    }
+}
+
+  
+   
